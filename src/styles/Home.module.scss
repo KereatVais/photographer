@@ -1,0 +1,167 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 3rem 5rem;
+  min-height: 100vh;
+  font-size: 16px;
+}
+
+.title {
+  font-size: 8em;
+  padding: 60px;
+  color: white;
+  font-weight: 700;
+  z-index: 1;
+  width: 1000px;
+  height: fit-content;
+  line-height: 0.9em;
+  position: relative;
+}
+
+.border {
+  content: '';
+  position: absolute;
+  background-color: white;
+}
+
+.borderTopLeftV {
+  height: 100px;
+  width: 2px;
+  top: 0;
+  left: 0;
+}
+
+.borderTopLeftH {
+  width: 100px;
+  height: 2px;
+  top: 0;
+  left: 0;
+}
+
+.borderTopRightV {
+  height: 100px;
+  width: 2px;
+  top: 0;
+  right: 0;
+}
+
+.borderTopRightH {
+  width: 100px;
+  height: 2px;
+  top: 0;
+  right: 0;
+}
+
+.borderBottomLeftV {
+  height: 100px;
+  width: 2px;
+  bottom: 0;
+  left: 0;
+}
+
+.borderBottomLeftH {
+  width: 100px;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+}
+
+.borderBottomRightV {
+  height: 100px;
+  width: 2px;
+  bottom: 0;
+  right: 0;
+}
+
+.borderBottomRightH {
+  width: 100px;
+  height: 2px;
+  bottom: 0;
+  right: 0;
+}
+
+.description {
+  font-size: 1.75em;
+  color: white;
+  z-index: 1;
+  width: 1000px;
+}
+
+.socialNetworks {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+/* Tablet and Smaller Desktop */
+@media (max-width: 1120px) {
+  .main {
+    font-size: 10px;
+    padding: 2rem;
+  }
+
+  .title {
+    padding: 20px;
+    width: 600px;
+  }
+
+  .borderBottom {
+    &LeftV, &RightV {
+      height: 30px;
+    }
+
+    &LeftH, &RightH {
+      width: 30px;
+    }
+  }
+
+  .borderTop {
+    &LeftV, &RightV {
+      height: 30px;
+    }
+
+    &LeftH, &RightH {
+      width: 30px;
+    }
+  }
+
+  .description {
+    width: 600px;
+  }
+
+  .socialNetworks {
+    gap: 20px;
+
+    img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .main {
+    font-size: 6px;
+  }
+
+  .title {
+    width: 100%
+  }
+
+  .description {
+    font-size: 3em;
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .title {
+    font-size: 32px;
+  }
+
+  .description {
+    font-size: 12px;
+  }
+}
